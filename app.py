@@ -8,7 +8,6 @@ st.title("Chatbot")
     
 # Add a setup section
 if "setup_complete" not in st.session_state:
-    print('Boo')
     st.session_state.setup_complete = False
 if "chat_complete" not in st.session_state:
     st.session_state.chat_complete = False
@@ -29,7 +28,6 @@ def show_feedback():
     st.session_state.feedback_shown = True
 
 def clear_session_state():
-    print('Clearing session state')
     for key in st.session_state.keys():
         del st.session_state[key]
 
